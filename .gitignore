@@ -1,0 +1,31 @@
+# macOSのシステムファイルを無視
+.DS_Store
+
+# Pythonのコンパイル済ファイルを無視
+*.pyc
+
+# Pythonのキャッシュディレクトを無視
+__pycache__/
+
+# Node.jsの依存関係ディレクトリを無視
+node_modules/
+
+# Next.jsのビルド出力を無視
+.next/
+
+# 環境変数ファイルを無視
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ログファイルを無視
+*.log
+
+# エディタの設定ファイルを無視
+.vscode/
+.idea/
+
+# OSが生成する一時ファイルを無視
+Thumbs.db

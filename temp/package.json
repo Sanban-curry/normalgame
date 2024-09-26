@@ -1,0 +1,17 @@
+'use client'
+
+import React, { useState } from 'react'
+import { useForm, Controller } from 'react-hook-form'
+import { motion } from 'framer-motion'
+import { Bowl, ChevronRight } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
+
+type BowlType = 'small' | 'medium' | 'large'
+
+interface BowlSelectorProps {
+  onSelect: (bowlType: BowlType) => void
+}
+
+const BowlSelector: React.FC<BowlSelectorProps> = ({ onSelect }) => {
+  const { t } = useTranslation()
+  const [selectedBowl, setSelectedBowl] = useState<BowlType | null>(null)
